@@ -4,7 +4,7 @@
 filename="backup_`date +%d`_`date +%m`_`date +%Y`.tar";
 
 #find .gz files with find and create compressed file using tar
-find /var/log/ -name "*.gz" -exec tar cvpzf /home/emin/Projects/backup/$filename.tar {} \;
+find /var/log/ -name "*.gz" -exec tar cvpzf /home/emin/Projects/backup/$filename {} \;
 
 #move to backup folder
 cd /home/emin/Projects/backup/
